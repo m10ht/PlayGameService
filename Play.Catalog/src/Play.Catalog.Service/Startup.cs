@@ -18,8 +18,8 @@ using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
 using MongoDB.Driver;
 using Play.Catalog.Service.Entities;
-using Play.Common.MongoDB;
-using Play.Common.Settings;
+using Play.Utility.MongoDB;
+using Play.Utility.Settings;
 
 namespace Play.Catalog.Service
 {
