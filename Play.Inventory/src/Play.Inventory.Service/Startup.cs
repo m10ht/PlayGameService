@@ -12,6 +12,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Play.Inventory.Service.Clients;
+using Play.Inventory.Service.Entities;
 using Play.Utility.MongoDB;
 using Polly;
 using Polly.Timeout;
