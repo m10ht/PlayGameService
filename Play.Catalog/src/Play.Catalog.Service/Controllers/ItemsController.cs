@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using MassTransit;
 using Microsoft.AspNetCore.Mvc;
-using Play.Catalog.Contratcts;
+using Play.Catalog.Contracts;
 using Play.Catalog.Service.Dtos;
 using Play.Catalog.Service.Entities;
 using Play.Utility;
@@ -101,7 +101,7 @@ namespace Play.Catalog.Service.Controllers
 
             await _itemsRepository.RemoveAsync(existingItem.Id);
 
-            await _publishEndPoint.Publish(new CatelogItemDeleted(id));
+            await _publishEndPoint.Publish(new CatalogItemDeleted(id));
 
             return NoContent();
         }

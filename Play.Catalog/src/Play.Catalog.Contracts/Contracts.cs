@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Play.Catalog.Contratcts
+namespace Play.Catalog.Contracts
 {
     public record CatalogItemCreated(
         Guid ItemId,
@@ -12,5 +12,5 @@ namespace Play.Catalog.Contratcts
         string Name,
         string Description);
 
-    public record CatelogItemDeleted(Guid ItemId);
+    public record CatalogItemDeleted(Guid ItemId);
 }
